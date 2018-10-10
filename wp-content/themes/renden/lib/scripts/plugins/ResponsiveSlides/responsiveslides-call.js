@@ -18,10 +18,10 @@ jQuery(document).ready(function() {
 
 	// Set transition time between slides
 	if ( ! jQuery( this ).closest( '.rslides-container' ).attr('data-speed') ) {
-		slideSpeed = 6000;
+		slideSpeed = 12000;
 	} else {
 		slideSpeed = jQuery( this ).closest( '.rslides-container' ).attr('data-speed')
-		
+
 		// Disable auto-scroll if slider speed id equal to 0
 		if ( slideSpeed == 'off' ) {
 			slideSpeed = null;
@@ -47,7 +47,7 @@ jQuery(document).ready(function() {
 		before: function(){},   // Function: Before callback
 		after: function(){}     // Function: After callback
 	});
-	
+
 	});
 });
 
@@ -220,7 +220,7 @@ jQuery(document).ready(function() {
 		var instanceID = 'rslides-sc-' + i;
 
 		jQuery( element ).attr( 'id', instanceID );
-		
+
 		// Supported Platforms
 		var slider_li = jQuery( element ).find( '.rslides-inner .slides li' );
 
@@ -343,7 +343,7 @@ jQuery(document).ready(function() {
 		var instanceID = 'thinkupslider-sc-' + i;
 
 		jQuery( element ).attr( 'id', instanceID );
-		
+
 		// Supported Platforms
 		var slider_li = jQuery( element ).find( '.rslides-inner .slides li' );
 
